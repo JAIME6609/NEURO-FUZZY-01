@@ -1,0 +1,20 @@
+MANUSCRIPT AND COMPUTATIONAL VERIFICATION
+
+Manuscript: Neuro_Fuzzy_Chronic_Diseases_Chapter.docx
+Title and author order retained from the supplied proposal.
+English throughout; no index or table of contents.
+Word count: 9,250, using LibreOffice Writer's document-statistic count after DOCX import.
+Count includes title, author block, abstract, keywords, headings, captions, tables and references; page-number fields are excluded.
+Abstract: 996 characters including spaces.
+Subsection counts for Sections 1 through 7: 2, 3, 2, 1, 3, 2, 1.
+Editable native Word OMML objects: 100 (24 numbered display equations and 76 inline expressions).
+Display equations use center and right paragraph tab stops, without equation tables.
+Tables: 6. Figures: 6. References: 17, dated 2021-2025, with DOI URLs.
+Sections 5-7 contain no bibliographic citations.
+Page review: all 24 rendered pages inspected; multiline equations verified after repair.
+
+Numerical run: completed for all four tasks and all three split seeds.
+Primary classification and regression metrics independently recalculated from archived predictions.
+Analytic-gradient finite-difference, subject-partition separation and rule-reconstruction checks passed.
+Final figure generation routine executed successfully from saved results.
+All records are synthetic; no clinical validity or patient benefit is established.

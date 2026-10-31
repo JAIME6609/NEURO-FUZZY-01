@@ -1,0 +1,95 @@
+{
+  "data_seed": 20261025,
+  "split_seeds": [
+    11,
+    29,
+    47
+  ],
+  "data_status": "All records are simulated; no patients or clinical images are included.",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "pandas": "2.2.3",
+      "sklearn": "1.8.0",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0"
+    }
+  },
+  "tasks": {
+    "renal": {
+      "rows": 2400,
+      "features": [
+        "age",
+        "eGFR",
+        "log_albuminuria",
+        "systolic_pressure",
+        "diabetes"
+      ],
+      "partitions": {
+        "train": 1440,
+        "tune": 240,
+        "calibration": 240,
+        "test": 480
+      },
+      "test_subjects": 480
+    },
+    "lung": {
+      "rows": 2000,
+      "features": [
+        "age",
+        "diameter",
+        "spiculation",
+        "texture",
+        "smoking"
+      ],
+      "partitions": {
+        "train": 1200,
+        "tune": 200,
+        "calibration": 200,
+        "test": 400
+      },
+      "test_subjects": 400
+    },
+    "monitoring": {
+      "rows": 6000,
+      "features": [
+        "pulse_transit_time",
+        "heart_rate",
+        "age",
+        "activity"
+      ],
+      "partitions": {
+        "train": 3600,
+        "tune": 600,
+        "calibration": 600,
+        "test": 1200
+      },
+      "test_subjects": 40
+    },
+    "sensor": {
+      "rows": 2400,
+      "features": [
+        "raw_pressure",
+        "temperature",
+        "battery"
+      ],
+      "partitions": {
+        "train": 1440,
+        "tune": 240,
+        "calibration": 240,
+        "test": 480
+      },
+      "test_subjects": 480
+    }
+  },
+  "validation": {
+    "maximum_gradient_absolute_error": 1.440483149428573e-10,
+    "group_disjointness": "passed",
+    "rule_reconstruction": "passed",
+    "bootstrap_repetitions": 1000,
+    "interval_scope": "Conditional on fitted models; no training-data resampling."
+  }
+}
